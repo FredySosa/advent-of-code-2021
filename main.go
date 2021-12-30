@@ -16,5 +16,10 @@ func runDay1() {
 	if err != nil {
 		log.Panic(err)
 	}
-	fmt.Println(totalIncreased)
+	fmt.Println("Day 1.1 answer:", totalIncreased)
+	totalTripletsIncreased, err := day1.CountIncreasedTriplets("./day1/input.txt")
+	if err != nil {
+		log.Panic(err)
+	}
+	fmt.Println("Day 1.2 answer:", totalTripletsIncreased)
 }
