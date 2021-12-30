@@ -5,10 +5,20 @@ import (
 	"log"
 
 	"github.com/FredySosa/advent-of-code-2021/day1"
+	"github.com/FredySosa/advent-of-code-2021/day2"
 )
 
 func main() {
-	runDay1()
+	//runDay1()
+	runDay2()
+}
+
+func runDay2() {
+	horizontal, depth, err := day2.GetHorizontalDepth("./day2/input.txt")
+	if err != nil {
+		log.Panic(err)
+	}
+	fmt.Printf("Horizontal: %d. Depth: %d. Answer day 2.1: %d\n", horizontal, depth, (horizontal * depth))
 }
 
 func runDay1() {
