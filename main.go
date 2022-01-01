@@ -19,6 +19,11 @@ func runDay2() {
 		log.Panic(err)
 	}
 	fmt.Printf("Horizontal: %d. Depth: %d. Answer day 2.1: %d\n", horizontal, depth, (horizontal * depth))
+	horizontal, depth, aim, err := day2.GetHorizontalDepthAim("./day2/input.txt")
+	if err != nil {
+		log.Panic(err)
+	}
+	fmt.Printf("Horizontal: %d. Depth: %d. Aim: %d. Answer day 2.1: %d\n", horizontal, depth, aim, (horizontal * depth))
 }
 
 func runDay1() {
