@@ -21,6 +21,12 @@ func runDay3() {
 		log.Panic(err)
 	}
 	fmt.Printf("Gama: %d. Epsilon: %d. Answer day 3.1: %d\n", gama, epsilon, (gama * epsilon))
+
+	oxGen, coScrub, err := day3.GetOxGenCOScrub("./day3/input.txt")
+	if err != nil {
+		log.Panic(err)
+	}
+	fmt.Printf("Oxigen Generator: %d. CO2 Scrubber: %d. Answer day 3.2: %d\n", oxGen, coScrub, (oxGen * coScrub))
 }
 
 func runDay2() {
