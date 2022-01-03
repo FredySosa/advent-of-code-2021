@@ -6,11 +6,21 @@ import (
 
 	"github.com/FredySosa/advent-of-code-2021/day1"
 	"github.com/FredySosa/advent-of-code-2021/day2"
+	"github.com/FredySosa/advent-of-code-2021/day3"
 )
 
 func main() {
 	//runDay1()
-	runDay2()
+	//runDay2()
+	runDay3()
+}
+
+func runDay3() {
+	gama, epsilon, err := day3.GetGamaEpsilonNumbers("./day3/input.txt")
+	if err != nil {
+		log.Panic(err)
+	}
+	fmt.Printf("Gama: %d. Epsilon: %d. Answer day 3.1: %d\n", gama, epsilon, (gama * epsilon))
 }
 
 func runDay2() {
